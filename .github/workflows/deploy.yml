@@ -16,6 +16,9 @@ jobs:
     environment: testing
     runs-on: ubuntu-latest
     steps:
+      - name: Output information
+        run: |
+          echo "I'm Alive!"
       - name: Get Code
         uses: actions/checkout@v3
       - name: Cache dependencies
